@@ -1,0 +1,6 @@
+article[data-testid='tweet'][data-hide-gif],
+[data-testid='cellInnerDiv']:has(article[data-testid='tweet'][data-hide-gif]):not(
+    :has(article[data-testid='tweet']:not([data-hide-gif]))
+  ) {
+  display: none !important;
+}
